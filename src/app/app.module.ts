@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './Pages/Partials/loader/loader.component';
 import { StudentPageComponent } from './Pages/student-page/student-page.component';
+import { StudentEditComponent } from './Pages/student-edit/student-edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StudentPageComponent } from './Pages/student-page/student-page.componen
     StudentCreateComponent,
     NavbarComponent,
     LoaderComponent,
-    StudentPageComponent
+    StudentPageComponent,
+    StudentEditComponent
   ],
   imports: [
     BrowserModule,
