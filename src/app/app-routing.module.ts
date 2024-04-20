@@ -14,8 +14,8 @@ export const routes: Routes = [
     { path: 'about-page', component: AboutPageComponent, title: 'About Page'},
     { path: 'navbar', component: NavbarComponent, title: 'Nav Bar'},
     { path: 'students', component: StudentPageComponent, title: 'Student Lists'},
-    { path: 'students/create', component: StudentCreateComponent, title: 'Student Create'},
-    { path: 'students/:id/edit', component: StudentEditComponent, title: 'Student Edit'}
+    { path: 'students/create', component: StudentCreateComponent, title: 'Create Student'},
+    { path: 'students/:id/edit', component: StudentEditComponent, title: 'Edit Student'}
 ];
 
 
