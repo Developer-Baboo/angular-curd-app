@@ -12,6 +12,7 @@ import { NavbarComponent } from './Pages/Partials/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './Pages/Partials/loader/loader.component';
+import { StudentPageComponent } from './Pages/student-page/student-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LoaderComponent } from './Pages/Partials/loader/loader.component';
     ContactPageComponent,
     StudentCreateComponent,
     NavbarComponent,
-    LoaderComponent
+    LoaderComponent,
+    StudentPageComponent
   ],
   imports: [
     BrowserModule,
