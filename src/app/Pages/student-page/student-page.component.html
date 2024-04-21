@@ -32,7 +32,9 @@
                                 <td>{{ item.created_at }}</td>
                                 <td>
                                     <a routerLink="/students/{{item.id}}/edit" class="btn btn-success btn-sm mx-2">Edit</a>
-                                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                    <button type="button" (click) = "deleteStudent($event, item.id)"
+                                      class="btn btn-danger btn-sm">
+                                      Delete</button>
                                 </td>
                             </tr>
                         </tbody>

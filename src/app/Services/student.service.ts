@@ -50,8 +50,10 @@ export class StudentService {
     return this.HttpClient.put(`http://localhost:8000/api/students/${studentId}/edit`, inputData)
   }
 
-  // delete the data api
-
+  // delete the data by id api
+  destroyStudent(studentId: Number){
+    return this.HttpClient.delete(`http://localhost:8000/api/students/${studentId}/delete`);
+  }
 
 
 }

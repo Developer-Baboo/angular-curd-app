@@ -12,10 +12,12 @@ export class StudentPageComponent {
 
   students!:StudentResponse[];
   isLoading: boolean = false;
+  
   ngOnInit(){
     this.getStudentLists();
   }
 
+  // Get List of Students functionality
   getStudentLists(){
     this.isLoading = true;
     this.studentService.getStudents().subscribe((res:any)=>{
@@ -24,5 +26,21 @@ export class StudentPageComponent {
       this.isLoading = false;
     })
   }
+
+
+  // Delete Student Functionality
+  deleteStudent(event:any, studentId: Number)
+  {
+    if(confirm('Are you sure you want to delete this data ?')){
+      event.target.innerText = "Deleting.......";
+
+      this.studentService.destroyStudent(studentId).subscribe((res:any)=>{
+        this.getStudentLists();
+        alert(res.message);
+      })
+    }
+  }
+
+  
 
 }
