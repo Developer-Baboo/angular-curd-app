@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './Pages/Partials/loader/loader.component';
 import { StudentPageComponent } from './Pages/student-page/student-page.component';
 import { StudentEditComponent } from './Pages/student-edit/student-edit.component';
+import { FooterComponent } from './Partials/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StudentEditComponent } from './Pages/student-edit/student-edit.componen
     NavbarComponent,
     LoaderComponent,
     StudentPageComponent,
-    StudentEditComponent
+    StudentEditComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
